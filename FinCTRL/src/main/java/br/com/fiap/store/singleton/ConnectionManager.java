@@ -22,7 +22,7 @@ public class ConnectionManager {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			
-			connection = DriverManager.getConnection("jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL", "rm550961", "090704");
+			connection = DriverManager.getConnection("jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL", "login", "senha");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
